@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p>clicck "try it" to display the first array element,after a string </p>
+	<button onclick="myfunction()" >try it</button>
+	<p id ="demo"></p>
+	<script type="text/javascript">
+		function myfunction()
+		{
+			var  str="a,g,d,y,h,e";
+			var arr=str.split(",");
+			document.getElementById("demo").innerHTML=arr[0];
+		}
+	</script>
+</body>
+</html>

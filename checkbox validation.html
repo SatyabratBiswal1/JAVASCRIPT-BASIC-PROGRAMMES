@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation sample</title>
+<script type="text/javascript">
+	function valid()
+	{
+		var x=document.login.box1.checked;
+		var y=document.login.box2.checked;
+		if(x==""&&y=="")
+		{
+			alert ("choose one of the given");
+
+		}
+		else
+		{
+			alert ("checcked");
+		}
+
+	}
+</script>
+<body>
+<form name="login">
+	<input type="checkbox" name="box1"> male&nbsp;
+	<input type="checkbox" name="box2">female&nbsp;
+	<input type="button" value ="click" onclick="valid()">
+</form>
+</body>
+</head>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>demo:confirm()</h1>
+	<p id ="msg"></p>
+	<script type="text/javascript">
+		var userpreference;
+		if(vonfirm("do you want to save changes?")==true)
+		{
+			userpreference="data saved sucessffully";
+		}
+		else
+		{
+			userpreference="save cancelled";
+		}
+		document.getElementByid("msg").innerHTML=userpreference;
+	</script>
+</body>
+</html>

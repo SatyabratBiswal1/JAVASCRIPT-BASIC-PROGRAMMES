@@ -1,0 +1,20 @@
+<DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<script type="text/javascript">
+		var n=document.getElementById("age").value;
+		var integer=parseInt(n);
+		function validate()
+		{
+		document.write(n);
+		if(n<18)
+		document.write("not eligeble");
+	else
+		document.write("eligeble for vote");
+}
+	</script>
+	<body>
+	Enter age:<input type="text" id="age"/>
+	<input type="button"  value="button" onclick="validate()"/>
+	</body>
+	</html>

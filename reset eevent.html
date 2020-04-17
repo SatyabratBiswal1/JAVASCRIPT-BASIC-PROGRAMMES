@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<p>resting the form data </p>
+	</title>
+</head>
+<script type="text/javascript">
+	function clearform()
+	{
+		c=confirm("do you want to clear the form ");
+		return c;
+	}
+</script>
+<body>
+	<form name="TestForm" onreset="javascript:return clearform()">
+		Name:<input type="text" name="Name">
+		
+		<input type="reset" name="reset" value="Reset">
+	</form>
+
+</body>
+</html>

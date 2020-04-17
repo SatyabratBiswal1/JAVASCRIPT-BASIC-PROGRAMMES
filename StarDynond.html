@@ -1,0 +1,55 @@
+<head>
+<script type="text/javascript">
+function display(){
+var content = document.getElementById("top").innerHTML;
+var divText="<br><fieldset style='background-color:green;color: #123abc;width: 400px;'><legend>"+"Star Diamond"+"</legend><fieldset style='background-color:yellow;color: #123546;width: 75px;'>";
+var input=document.getElementById("tex").value*1;
+var space=input-2;
+var line=(input+1)/2;
+;
+if(input==""){
+alert("Please enter Number");
+return false;
+}
+if((input%2)==0)
+{
+alert("Please enter Number");
+return false;
+}
+for(var i=0; i<line;i++)
+{
+for (var c = 1 ; c < space; c++ )
+divText=divText+"&nbsp";
+space--;
+for (var d = 1 ; d <=2*i+1 ; d++ )
+divText=divText+"*";
+divText=divText+"<br>";
+}
+var down=(input-1)/2;
+var spa=1;
+for(var r=down; r>0; r--)
+{
+for(var sp=spa; sp>=1; sp--)
+divText=divText+"&nbsp";
+spa++;
+for(var m=1; m<=2*r-1; m++)
+divText=divText+"*";
+divText=divText+"<br>";
+}
+divText=divText+"</fieldset>";
+content=content+divText;
+document.getElementById("top").innerHTML=content;
+return true;
+}
+</script>
+</head>
+<body><center><form id="1">
+<div id="top">
+<fieldset style="background-color:orange;color: #123abc; width: 400px;">
+<legend style="background-color:green;color: #ff0000; font-family: verdana; font-size: 14pt;">DISPLAY</legend>
+<div>Enter Number you want:<input type="text" id="tex" value=""><input type="button" id="dis" value="Display" onclick="return display()"></div>
+</fieldset>
+</div>
+</form></center>
+</body>
+</html>

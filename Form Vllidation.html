@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function valid()
+		{
+			var x=document.login.username.value;
+			var y =document.login.password.value;
+			if(x==null||x==""||y==null||y=="")
+			{
+				alert ("user name and passowrd ned not be empty");
+			}
+			else
+			{
+				alert("login success");
+			}
+
+		}
+		
+	</script>
+<body>
+<form name ="login" onsubmit="valid()">
+	username:<input type="text" name="username"><br>
+	passowrd:<input type="passowrd" name="passowrd"><br>
+	<input type="submit" name="submit">
+</form>
+</body>
+</head>
+</html>

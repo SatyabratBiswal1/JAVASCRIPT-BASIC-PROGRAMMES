@@ -1,0 +1,24 @@
+<html>
+<body>
+	<script type="text/javascript">
+		function emp(id,name)
+		  {
+		  	this.id=id;
+		  	this.name=name;
+		  }
+		  function emp2(id,name)
+		  {
+		  	emp.call(this,id,name);
+		  }
+		  function emp3(id,name)
+		  {
+		  	emp.call(this,id,name);
+		  }
+		  var e1=new emp2(101,"satya");
+		  var e2 = new emp3(101,"satyabrat")
+		  document.write(e1.id+ " "+e1.name + "<br>");
+		  document.write(e2.id + " " +e2.name);
+		</script>
+	</body>
+	</html>
+

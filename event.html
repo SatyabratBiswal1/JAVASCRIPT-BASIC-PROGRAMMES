@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		<p>Event on html by java script</p>
+	</title>
+</head>
+<script type="text/javascript">
+	function showcode()
+	{
+		 i=document.Testform.Country.selectedIndex;
+		v= document.TestForm.Country.option[i].value;
+		document.TestForm.ISD.value=v;
+	}
+</script>
+<body>
+	<form name='TestForm'>
+		Country:<select name='Country' onchange="javascript:showcode()">
+			<option value =''>select</option>
+			<option value ='001'>usa</option>
+			<option value='91'>india</option>
+		</select>
+		<br>phone:<input type='text' name='ISD' readonly='readonly' size='3'/>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h3>difference between innertex innerhtml textcontenet</h3>
+	<p id="demo">this element has extaytr spacing and coantains 
+		<span>a span element</span></p>
+
+		<button  onclick="getInnerText()">Get inner Text</button>
+		<button  onclick="getHTML()">Get inner Inner HTML</button>
+		<button  onclick="getTextContent()">Get Text content</button>
+		<p id ="demo"></p>
+	<script type="text/javascript">
+		function getInnerText()
+		{
+			alert (document.getElementById("demo").innerText)
+		}
+		function getHTML()
+		{
+			alert (document.getElementById("demo").innerHTML)
+		}
+		function getTextContent()
+		{
+			alert (document.getElementById("demo").textContent)
+		}
+		
+	</script>
+</body>
+</html>
